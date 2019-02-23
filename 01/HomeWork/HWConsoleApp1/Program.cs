@@ -5,7 +5,17 @@ namespace DemoApp1
 {
 	class Program
 	{
-		static void Main(string[] args) //HomeWork Lesson1
+		static void Main(string[] args) 
+			/* HomeWork Lesson1:
+			 * Ask for name. 
+			 * Wait 5 seconds. 
+			 * Display the greeting. If no name is entered, ask again. 
+			 * Continue after the name is entered. 
+			 * Display the greeting. 
+			 * Wait 5 seconds. 
+			 * Say goodbye. 
+			 * Wait for the user to confirm the action by pressing any key.
+			 */
 		{
 			Console.Title = "Home work Lesson 01";
 			Console.ForegroundColor = ConsoleColor.Yellow;
@@ -13,7 +23,7 @@ namespace DemoApp1
 			string name = Console.ReadLine();
 			while (name.Length == 0) //checks if a name is entered
 			{
-				Console.WriteLine("****************************************************");
+				Console.WriteLine("******************************************************");
 				Console.WriteLine("Вы не ввели имя. Введите имя и нажмите клавишу <ENTER>.");
 				name = Console.ReadLine();
 			}
@@ -27,3 +37,4 @@ namespace DemoApp1
 		}
 	}
 }
+ 
