@@ -7,10 +7,13 @@ namespace DemoApp1
 	{
 		static void Main(string[] args) //HomeWork Lesson1
 		{
+			Console.Title = "Home work Lesson 01";
+			Console.ForegroundColor = ConsoleColor.Yellow;
 			Console.WriteLine("Введите имя и нажмите клавишу <ENTER>.");
 			string name = Console.ReadLine();
 			while (name.Length == 0) //checks if a name is entered
 			{
+				Console.WriteLine("****************************************************");
 				Console.WriteLine("Вы не ввели имя. Введите имя и нажмите клавишу <ENTER>.");
 				name = Console.ReadLine();
 			}
