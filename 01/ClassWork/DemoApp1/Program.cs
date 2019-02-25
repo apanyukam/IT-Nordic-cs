@@ -11,8 +11,6 @@ namespace DemoApp1
 			string name = Console.ReadLine();
 			Thread.Sleep(5000);
 			Console.WriteLine($"Здравствуйте, {name}!");
-			Thread.Sleep(5000);
-			Console.WriteLine($"Желаю удачи {name}!");
 			Console.ReadKey();
 		}
 	}
