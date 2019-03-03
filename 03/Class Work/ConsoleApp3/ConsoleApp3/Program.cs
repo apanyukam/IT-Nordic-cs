@@ -46,11 +46,10 @@ namespace ConsoleApp3
 			{
 				Console.WriteLine("введите имя пятерых друзей поочередно:");
 				names[i]=Console.ReadLine();
-						}
+			}
 			for (int i = 0; i < names.Length; i++)
 			{
-				Console.WriteLine(names[i]); // доделать
-				
+				Console.WriteLine(names[i]);
 			}
 
 
