@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HWConsoleApp3_v1", "HWConsoleApp3\HWConsoleApp3_v1.csproj", "{12BB3AE3-F41A-4E3B-A7C0-71D444F2A92B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWConsoleApp3_v2", "HWConsoleApp3_v2\HWConsoleApp3_v2.csproj", "{6F233B52-FFB0-459D-8CB6-72CFB63359ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HWConsoleApp3_v2", "HWConsoleApp3_v2\HWConsoleApp3_v2.csproj", "{6F233B52-FFB0-459D-8CB6-72CFB63359ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWConsoleApp3_v3", "ConsoleApp1\HWConsoleApp3_v3.csproj", "{9ACCFB6D-3979-4E15-B2D1-D07F6E09765A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6F233B52-FFB0-459D-8CB6-72CFB63359ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F233B52-FFB0-459D-8CB6-72CFB63359ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F233B52-FFB0-459D-8CB6-72CFB63359ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ACCFB6D-3979-4E15-B2D1-D07F6E09765A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACCFB6D-3979-4E15-B2D1-D07F6E09765A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACCFB6D-3979-4E15-B2D1-D07F6E09765A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACCFB6D-3979-4E15-B2D1-D07F6E09765A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
