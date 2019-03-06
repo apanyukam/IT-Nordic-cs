@@ -37,38 +37,25 @@ namespace HWConsoleApp4
 			{
 				numberPackageSmall = Math.Floor(((volumeJuice % packageLarge) % packageMedium) / packageSmall);
 			}
-			// вывожу временно для проверки вычислений
-			Console.WriteLine($" 20 л: {numberPackageLarge} " +
-							$"\n  5 л: {numberPackageMedium} " +
-							$"\n  1 л: {numberPackageSmall}");
 
-			// этот блок не доделан
 			var UsedPackageTypes = PackageSizeType.None;
 			if (numberPackageLarge > 0)
 			{
-				UsedPackageTypes = UsedPackageTypes | PackageSizeType.Large;
+				UsedPackageTypes = PackageSizeType.Large;
+				Console.WriteLine($"{UsedPackageTypes}:{numberPackageLarge}");
 			}
-			else
-			{
-				UsedPackageTypes = UsedPackageTypes & PackageSizeType.Large;
-			}
+
 			if (numberPackageMedium > 0)
 			{
-				UsedPackageTypes = UsedPackageTypes | PackageSizeType.Medium;
+				UsedPackageTypes = PackageSizeType.Medium;
+				Console.WriteLine($"{UsedPackageTypes}:{numberPackageMedium}");
 			}
-			else
-			{
-				UsedPackageTypes = UsedPackageTypes & PackageSizeType.Medium; // здесь ошибка. не знаю что сделать
-			}
+
 			if (numberPackageSmall > 0)
 			{
-				UsedPackageTypes = UsedPackageTypes | PackageSizeType.Small;
+				UsedPackageTypes = PackageSizeType.Small;
+				Console.WriteLine($"{UsedPackageTypes}:{numberPackageSmall}");
 			}
-			else
-			{
-				UsedPackageTypes = UsedPackageTypes & PackageSizeType.Small; // здесь ошибка. не знаю что сделать
-			}
-			Console.WriteLine(UsedPackageTypes); // не знаю как вывести перечисления в столбец и результат вычислений
 			Console.ReadLine();
 		}
 	}
