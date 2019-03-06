@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWConsoleApp5_1", "CWConsoleApp5\CWConsoleApp5_1.csproj", "{2D6CB007-D883-4014-BDF7-BFD2F4D91404}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWConsoleApp5_1", "CWConsoleApp5\CWConsoleApp5_1.csproj", "{2D6CB007-D883-4014-BDF7-BFD2F4D91404}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWConsoleApp5_2", "CWConsoleApp4_2\CWConsoleApp5_2.csproj", "{097205D3-571D-42B4-874A-CB05A96B1225}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWConsoleApp5_2", "CWConsoleApp4_2\CWConsoleApp5_2.csproj", "{097205D3-571D-42B4-874A-CB05A96B1225}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

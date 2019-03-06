@@ -6,10 +6,21 @@ namespace CWConsoleApp4_2
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Введите целое число:");
-			Console.WriteLine("Число " + (int.Parse(Console.ReadLine()) >= 0
-				? "неотрицательное"
-				: "отрицательное"));
+			try
+			{
+				Console.WriteLine("Введите целое число:");
+				Console.WriteLine("Число " + (int.Parse(Console.ReadLine()) >= 0
+					? "неотрицательное"
+					: "отрицательное"));
+			}
+			catch (FormatException e)
+			{
+				Console.WriteLine("введены неверные данные");
+				Console.WriteLine(e.Message);
+				throw;
+			}
+
 		}
 	}
+
 }
