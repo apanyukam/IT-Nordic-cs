@@ -41,21 +41,27 @@ namespace HWConsoleApp4
 			var UsedPackageTypes = PackageSizeType.None;
 			if (numberPackageLarge > 0)
 			{
-				UsedPackageTypes = PackageSizeType.Large;
-				Console.WriteLine($"{UsedPackageTypes}:{numberPackageLarge} шт.");
+				UsedPackageTypes = UsedPackageTypes | PackageSizeType.Large;
+				
 			}
 
 			if (numberPackageMedium > 0)
 			{
-				UsedPackageTypes = PackageSizeType.Medium;
+				UsedPackageTypes = UsedPackageTypes | PackageSizeType.Medium;
 				Console.WriteLine($"{UsedPackageTypes}:{numberPackageMedium} шт.");
 			}
 
 			if (numberPackageSmall > 0)
 			{
-				UsedPackageTypes = PackageSizeType.Small;
+				UsedPackageTypes = UsedPackageTypes | PackageSizeType.Small;
 				Console.WriteLine($"{UsedPackageTypes}:{numberPackageSmall} шт.");
 			}
+
+			if ((UsedPackageTypes & PackageSizeType.Large) == PackageSizeType.Large)
+			{
+				Console.WriteLine($"Количество больших пакетов :{numberPackageLarge} шт.");
+			}
+
 			Console.ReadLine();
 		}
 	}
