@@ -42,19 +42,19 @@ namespace HWConsoleApp4
 			if (numberPackageLarge > 0)
 			{
 				UsedPackageTypes = PackageSizeType.Large;
-				Console.WriteLine($"{UsedPackageTypes}:{numberPackageLarge}");
+				Console.WriteLine($"{UsedPackageTypes}:{numberPackageLarge} шт.");
 			}
 
 			if (numberPackageMedium > 0)
 			{
 				UsedPackageTypes = PackageSizeType.Medium;
-				Console.WriteLine($"{UsedPackageTypes}:{numberPackageMedium}");
+				Console.WriteLine($"{UsedPackageTypes}:{numberPackageMedium} шт.");
 			}
 
 			if (numberPackageSmall > 0)
 			{
 				UsedPackageTypes = PackageSizeType.Small;
-				Console.WriteLine($"{UsedPackageTypes}:{numberPackageSmall}");
+				Console.WriteLine($"{UsedPackageTypes}:{numberPackageSmall} шт.");
 			}
 			Console.ReadLine();
 		}
