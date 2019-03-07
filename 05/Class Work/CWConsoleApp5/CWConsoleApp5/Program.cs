@@ -20,7 +20,7 @@ namespace CWConsoleApp5
 		}
 		static void Main(string[] args)
 		{
-			MyColors[] favoriteColors = new MyColors[4];
+			//MyColors[] favoriteColors = new MyColors[4];
 
 			Console.WriteLine($"Введите избранные цвета из предложенных: {0}", string.Join(' ', Enum.GetNames(typeof(Mycolors)));		
 			for (int i = 0; i < 4; i++)

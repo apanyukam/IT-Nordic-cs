@@ -1,5 +1,10 @@
-﻿using System;
+﻿//Lesson 04 home work 
+
+using System;
+using System.Globalization;
+using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace HWConsoleApp4
 {
@@ -13,9 +18,13 @@ namespace HWConsoleApp4
 			Medium = 0x1 << 1,
 			Large = 0x1 << 2
 		}
-
 		static void Main(string[] args)
 		{
+			Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+			Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;
+			Console.InputEncoding = Encoding.Unicode;
+			Console.OutputEncoding = Encoding.Unicode;
+
 			byte packageSmall = 1;
 			byte packageMedium = 5;
 			byte packageLarge = 20;
@@ -24,45 +33,44 @@ namespace HWConsoleApp4
 			double numberPackageMedium;
 			double numberPackageSmall;
 
-			Console.Write("Какой объем сока (в литрах) требуется упаковать: ");
-			volumeJuice = double.Parse(Console.ReadLine());
-
-			numberPackageLarge = Math.Floor(volumeJuice / packageLarge);
-			numberPackageMedium = Math.Floor((volumeJuice % packageLarge) / packageMedium);
-			if ((((volumeJuice % packageLarge) % packageMedium) % packageSmall) > 0)
+			try
 			{
-				numberPackageSmall = Math.Floor(((volumeJuice % packageLarge) % packageMedium) / packageSmall) + 1;
-			}
-			else
-			{
-				numberPackageSmall = Math.Floor(((volumeJuice % packageLarge) % packageMedium) / packageSmall);
-			}
+				Console.Write("\nКакой объем сока (в литрах) требуется упаковать: ");
+				volumeJuice = double.Parse(Console.ReadLine());
+				if (volumeJuice < 0)
+					throw new Exception("Отрицательное число");
+				else
+				{
+					numberPackageLarge = Math.Floor(volumeJuice / packageLarge);
+					numberPackageMedium = Math.Floor((volumeJuice % packageLarge) / packageMedium);
+					numberPackageSmall = Math.Ceiling(((volumeJuice % packageLarge) % packageMedium) / packageSmall);
 
-			var UsedPackageTypes = PackageSizeType.None;
-			if (numberPackageLarge > 0)
-			{
-				UsedPackageTypes = UsedPackageTypes | PackageSizeType.Large;
-				
-			}
+					var UsedPackageTypes = PackageSizeType.None;
+					if (numberPackageLarge > 0)
+						UsedPackageTypes = UsedPackageTypes | PackageSizeType.Large;
+					if (numberPackageMedium > 0)
+						UsedPackageTypes = UsedPackageTypes | PackageSizeType.Medium;
+					if (numberPackageSmall > 0)
+						UsedPackageTypes = UsedPackageTypes | PackageSizeType.Small;
 
-			if (numberPackageMedium > 0)
-			{
-				UsedPackageTypes = UsedPackageTypes | PackageSizeType.Medium;
-				Console.WriteLine($"{UsedPackageTypes}:{numberPackageMedium} шт.");
+					Console.WriteLine($"\nДля упаковки {volumeJuice} л. сока потребуется: ");
+					if ((UsedPackageTypes & PackageSizeType.Large) == PackageSizeType.Large)
+						Console.WriteLine($"Пакеты 20л: {numberPackageLarge} шт.");
+					if ((UsedPackageTypes & PackageSizeType.Medium) == PackageSizeType.Medium)
+						Console.WriteLine($"Пакеты  5л: {numberPackageMedium} шт.");
+					if ((UsedPackageTypes & PackageSizeType.Small) == PackageSizeType.Small)
+						Console.WriteLine($"Пакеты  1л: {numberPackageSmall} шт.");
+					if (volumeJuice == 0)
+						Console.WriteLine("\nУпаковка не нужна.");
+					Console.ReadLine();
+				}
 			}
-
-			if (numberPackageSmall > 0)
+			catch (Exception e)
 			{
-				UsedPackageTypes = UsedPackageTypes | PackageSizeType.Small;
-				Console.WriteLine($"{UsedPackageTypes}:{numberPackageSmall} шт.");
+				Console.Write("Введены некорректные данные: ");
+				Console.WriteLine(e.Message);
+				throw;
 			}
-
-			if ((UsedPackageTypes & PackageSizeType.Large) == PackageSizeType.Large)
-			{
-				Console.WriteLine($"Количество больших пакетов :{numberPackageLarge} шт.");
-			}
-
-			Console.ReadLine();
 		}
 	}
 }

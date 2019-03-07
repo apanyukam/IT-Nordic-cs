@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CWConsoleApp4_2
+namespace CWConsoleApp5_1
 {
 	class Program
 	{
@@ -10,8 +10,8 @@ namespace CWConsoleApp4_2
 			{
 				Console.WriteLine("Введите целое число:");
 				Console.WriteLine("Число " + (int.Parse(Console.ReadLine()) >= 0
-					? "неотрицательное"
-					: "отрицательное"));
+					?"неотрицательное"
+					:"отрицательное"));
 			}
 			catch (FormatException e)
 			{
