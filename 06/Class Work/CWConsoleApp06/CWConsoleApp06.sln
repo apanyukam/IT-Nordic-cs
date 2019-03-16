@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWConsoleApp06_01", "CWConsoleApp06\CWConsoleApp06_01.csproj", "{43FDB36A-884B-49D9-A889-C44A51F64006}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWConsoleApp06_01", "CWConsoleApp06\CWConsoleApp06_01.csproj", "{43FDB36A-884B-49D9-A889-C44A51F64006}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWConsoleApp06_2", "CWConsoleApp06_2\CWConsoleApp06_2.csproj", "{D7DCAC9E-1368-48A6-A0E8-B484EDA47C4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWConsoleApp06_2", "CWConsoleApp06_2\CWConsoleApp06_2.csproj", "{D7DCAC9E-1368-48A6-A0E8-B484EDA47C4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWConsoleApp06_3", "CWConsoleApp06_3\CWConsoleApp06_3.csproj", "{62935234-9E60-421A-83D1-5CA6AF3B08BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CWConsoleApp06_03_marks", "CWConsoleApp06_3\CWConsoleApp06_03_marks.csproj", "{62935234-9E60-421A-83D1-5CA6AF3B08BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
