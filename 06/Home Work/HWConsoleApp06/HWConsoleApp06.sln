@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWConsoleApp06_natural_number", "HWConsoleApp06_natural_number\HWConsoleApp06_natural_number.csproj", "{550434BD-0AF8-40BF-88A5-8C818ECB213C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWConsoleApp06_bank_deposit", "HWConsoleApp06_bank_deposit\HWConsoleApp06_bank_deposit.csproj", "{D3FD8508-CE34-4AB1-BD30-807116B22FB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{550434BD-0AF8-40BF-88A5-8C818ECB213C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550434BD-0AF8-40BF-88A5-8C818ECB213C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550434BD-0AF8-40BF-88A5-8C818ECB213C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550434BD-0AF8-40BF-88A5-8C818ECB213C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3FD8508-CE34-4AB1-BD30-807116B22FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FD8508-CE34-4AB1-BD30-807116B22FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FD8508-CE34-4AB1-BD30-807116B22FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FD8508-CE34-4AB1-BD30-807116B22FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF270F0F-1A52-47DA-8145-2A9B770E670A}
+	EndGlobalSection
+EndGlobal
