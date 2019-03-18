@@ -18,7 +18,7 @@ namespace HWConsoleApp06_naturalNumber
 			uint quantityEvenNumbers = 0;
 
 			Console.WriteLine($"Введите натуральное число не более {comparisonNamber}:");
-			string stringNumber = Console.ReadLine();
+			 
 			while (true)
 			{
 				try
