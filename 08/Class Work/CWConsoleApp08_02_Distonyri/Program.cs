@@ -8,38 +8,30 @@ namespace CWConsoleApp08_02_Distonary
 	{
 		static void Main(string[] args)
 		{
-			var countres = new Dictionary<string, string>(3)
+			var countries = new Dictionary<string, string>(3)
 			{
 				{"Russia", "Moscow"},
 				{"USA", "New York" },
 				{"Gemany", "Berlin" }
 			};
 
-			Console.WriteLine("Введите столицу государства: ");
-
 			while (true)
 			{
-				int i = (new Random()).Next(4);
-				KeyValuePair<string, string> el3 = countres.ElementAt(3);
-				string 
-
-				Console.WriteLine("Введите столицу государства: ");
-				Console.WriteLine(el3);
-				string country = Console.ReadLine();
-				if () // доделать
-				{
-					Console.WriteLine("Угадал, МОЛОДЕЦ!");
-					continue;
-				}
+				int index = (new Random()).Next(3);
+				KeyValuePair<string, string> kvp = countries.ElementAtOrDefault(index);
+				string country = kvp.Key;
+				string capital = kvp.Value;
+				Console.Write($"Введите столицу страны \"{country}\": ");
+				var answer = Console.ReadLine()?.Trim();
+				if (answer == capital)
+					Console.WriteLine("Правильно!");
 				else
 				{
-					Console.WriteLine("Не угадал");
+					Console.WriteLine("Вы проиграли :( Выходим...");
 					break;
 				}
 			}
-
-
-
+			
 		}
 	}
 }

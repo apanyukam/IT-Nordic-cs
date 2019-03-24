@@ -11,9 +11,6 @@ namespace CWConsoleApp07_02
 			string[] words = test.Split(" ");
 			foreach (string word in words)
 				Console.WriteLine(word);
-
-
-
 		}
 	}
 }

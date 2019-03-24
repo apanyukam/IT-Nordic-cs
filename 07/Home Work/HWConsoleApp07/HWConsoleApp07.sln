@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWConsoleApp07_01", "HWConsoleApp07_01\HWConsoleApp07_01.csproj", "{D991D03B-1376-4763-9FAE-ED9632470CA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HWConsoleApp07_02", "HWConsoleApp07_02\HWConsoleApp07_02.csproj", "{23D6C12E-050E-4D08-9C40-78D5A212DF82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D991D03B-1376-4763-9FAE-ED9632470CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D991D03B-1376-4763-9FAE-ED9632470CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D991D03B-1376-4763-9FAE-ED9632470CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D991D03B-1376-4763-9FAE-ED9632470CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D6C12E-050E-4D08-9C40-78D5A212DF82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D6C12E-050E-4D08-9C40-78D5A212DF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D6C12E-050E-4D08-9C40-78D5A212DF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D6C12E-050E-4D08-9C40-78D5A212DF82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {233F835E-86F6-4E62-8DC8-C3D5FC417380}
+	EndGlobalSection
+EndGlobal
