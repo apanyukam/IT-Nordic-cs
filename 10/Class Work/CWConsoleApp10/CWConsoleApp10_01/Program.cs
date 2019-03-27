@@ -7,24 +7,18 @@ namespace CWConsoleApp10_01
 		static void Main(string[] args)
 		{
 			// первый вариант рекомендуемый
-			Pet a1 = new Pet
+			Pet dog = new Pet
 			{
 				Kind = "Dog",
 				Name = "Charli",
-				Age = 2,
+				DateOfBirth = DateTimeOffset.Parse("2011-03-12"),
 				Sex ='M'
 			};
-			Console.WriteLine(a1.PropertiesString);
+			//Console.WriteLine(a1.PropertiesString);
 
-			//второй вариант
-			Pet a2 = new Pet();
-			a2.Kind = "Cat";
-			a2.Name = "Barsic";
-			a2.Age = 5;
-			a2.Sex = 'F';
-			Console.WriteLine(a2.PropertiesString);
-
-
+			dog.WriteDescription(false);
+			Console.WriteLine(dog.PropertiesString);
+			
 		}
 	}
 }
