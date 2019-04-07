@@ -11,7 +11,8 @@ namespace CWConsoleApp12
 			//	DocName = "Passport",
 			//	DocNumber = "123 123 133",
 			//	IssueDate = DateTimeOffset.Parse("25-12-1983")
-				
+
+
 			//};
 			bd1.WriteToConsole();
 
@@ -25,11 +26,27 @@ namespace CWConsoleApp12
 			//};
 			bd2.WriteToConsole();
 
-			BaseDocument[] p1 = new BaseDocument[3];
-		
-			for (int i = 0; i < p1.Length; i++)
-			{
+			var documens = new BaseDocument[2];
 
+			documens[0] = new Passport(
+				"123 345 67",
+				DateTimeOffset.Parse("12-02-2012"),
+				"РФ",
+				"Игорь Смиронов");
+
+			documens[1] = new Passport(
+				"123 347 67",
+				DateTimeOffset.Parse("14-06-1999"),
+				"РФ",
+				"Игорь Иванов");
+
+			foreach (var document in documens)
+			{
+				if (document is Passport)
+				{
+					((Passport)document).ChangeIssueDate(DateTimeOffset.UtcNow);
+				}
+				document.WriteToConsole();
 			}
 			
 		}

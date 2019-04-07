@@ -10,9 +10,7 @@ namespace CWConsoleApp10_01
 		public string Name;
 		public char Sex;
 		public DateTimeOffset DateOfBirth;
-
-
-
+			   
 		public int Age
 		{
 			get

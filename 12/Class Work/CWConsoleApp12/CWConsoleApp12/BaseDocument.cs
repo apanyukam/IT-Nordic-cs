@@ -29,10 +29,5 @@ namespace CWConsoleApp12
 		{
 			Console.WriteLine(PropertiesString);
 		}
-
-	
-		
-
-
 	}
 }

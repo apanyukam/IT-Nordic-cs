@@ -15,11 +15,7 @@ namespace CWConsoleApp12
 			string docNumber,
 			DateTimeOffset issueDate)
 			: base("passport", docNumber, issueDate)
-		{
-		}
-
-
-
+		{ }
 
 		public Passport(
 			string docNumber,
@@ -35,11 +31,6 @@ namespace CWConsoleApp12
 			IssueDate = issueDate;
 		}
 
-		public void ChangeIssueDate()
-		{
-			IssueDate = IssueDate.UtcDateTime; // доделать
-		}
-
 		public override string PropertiesString
 		{
 			get
@@ -48,10 +39,15 @@ namespace CWConsoleApp12
 			}
 		}
 
+		public void ChangeIssueDate(DateTimeOffset newIssueDate)
+		{
+			IssueDate = newIssueDate;
+		}
 
-		//public void WriteToConsole()
-		//{
-		//	Console.WriteLine(PropertiesString);
-		//}
+
+		public void WriteToConsole()
+		{
+			Console.WriteLine(PropertiesString);
+		}
 	}
 }
