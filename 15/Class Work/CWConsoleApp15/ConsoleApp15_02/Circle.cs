@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp15_02
+namespace CWConsoleApp15_02
 {
 	public sealed class Circle
 	{
